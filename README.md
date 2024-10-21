@@ -13,7 +13,7 @@ O Reloginho é um jogo interativo onde o jogador aposta em qual "hora" o ponteir
 
 ### Exemplo Visual do Projeto
 
-![chrome-capture-2024-10-21](https://github.com/user-attachments/assets/1921c6e5-c613-47bf-a23c-bc1cd2394b06)
+![chrome-capture-2024-10-21](https://github.com/user-attachments/assets/7fa18891-2c73-4070-a0cc-0a7a7917984d)
 
 ## ✔️ Técnicas e Tecnologias Utilizadas
 
