@@ -13,7 +13,7 @@ Reloginho is an interactive game where the player bets on which "hour" the point
 
 ### Visual Example of the Project
 
-![chrome-capture-2024-10-21](https://github.com/user-attachments/assets/1921c6e5-c613-47bf-a23c-bc1cd2394b06)
+![chrome-capture-2024-10-21](https://github.com/user-attachments/assets/f0a978d0-bd71-4e9b-8b2b-789335f0ad5e)
 
 ## ✔️ Techniques and Technologies Used
 
