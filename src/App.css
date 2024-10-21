@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f4f4f4 50%, #e2e2e2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  width: 100%;
+  margin: 20px;
+}
+
+.title {
+  color: #FFAA00;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-controls {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.field {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.input, .select select {
+  width: 100%;
+  max-width: 100%;
+  height: 50px;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.input:focus, .select select:focus {
+  border-color: #FFAA00;
+  outline: none;
+  box-shadow: 0px 4px 8px rgba(255, 170, 0, 0.5);
+}
+
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.button.is-warning {
+  background-color: #FFAA00;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(255, 170, 0, 0.4);
+}
+
+.button.is-warning:hover {
+  background-color: #E09C00;
+  box-shadow: 0px 7px 20px rgba(255, 170, 0, 0.6);
+}
+
+.button.is-warning:active {
+  transform: scale(0.98);
+  box-shadow: 0px 4px 10px rgba(255, 170, 0, 0.3);
+}
+
+.result-message {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 12px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.result-message.win {
+  background-color: #d4edda;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+}
+
+.result-message.lose {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 2px solid #f5c6cb;
+}
+
+.result-message:hover {
+  transform: scale(1.05);
+}
+
+.bonus-info {
+  margin-top: 30px;
+  background-color: #fff8e7;
+  border: 2px solid #FFAA00;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.bonus-info h2 {
+  color: #FFAA00;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.bonus-info ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+.bonus-info li {
+  padding: 8px 0;
+  font-weight: bold;
+  color: #555;
+}
+
+.bonus-info li::before {
+  content: '⭐';
+  margin-right: 10px;
+  color: #FFAA00;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .input, .select select {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .button.is-warning {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .bonus-info h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .input, .select select {
+    max-width: 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+    height: auto;
+  }
+
+  .button.is-warning {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .bonus-info {
+    padding: 20px;
+  }
+
+  .bonus-info h2 {
+    font-size: 1.2rem;
+  }
+}
